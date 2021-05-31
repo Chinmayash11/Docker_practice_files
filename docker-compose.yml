@@ -1,0 +1,16 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  app1:
+    image: httpd
+    ports:
+      - "6000:80"
+
+  app2:
+    image: nginx
+    ports:
+      - "7000:80"
+
+  app3:
+    image: chinmayash11/myntraslim2
+    ports:
+      - "8000:80"
